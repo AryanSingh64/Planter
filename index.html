@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Map</title>
+    <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="body">
+           <div class="nav">
+            <div class="left">
+                <h1>Planter.</h1>
+            </div>
+            <div class="right">
+                <div class="right-under">
+                    <a href=""><i class="fa-brands fa-github-alt navlink"></i> Github</a>
+                    <a href=""><i style="color: #0077b5;" class="fa-brands fa-linkedin-in navlink"></i> Linkedin</a>
+                 
+                    <a href=""><i style="color: #ff6b6b;" class="fa-brands fa-instagram navlink"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+    <div class="wrapper">
+        <!-- <div class="menu-cover">
+            <div class="menu">
+                <a href="">Menu Item 1</a>
+                <a href="">Menu Item 2</a>
+                <a href="">Menu Item 3</a>
+                <a href="">Menu Item 4</a>
+            </div>
+        </div> -->
+ 
+        <div class="cover">
+            <div class="controls">
+                <p>Enter your topic</p>
+                <textarea id="topicInput" placeholder="Enter Your Topic" rows="2"></textarea>
+                
+                <div class="button">
+                <button id="addButton" onclick="addNode()">
+                   <i class="fa-solid fa-plus"></i><br> <span>Add Node</span>
+                </button>
+                <button id="connectBtn" onclick="toggleConnectionMode()">
+                    <i class="fa-solid fa-link"></i><br> <span>Connect Topics</span>
+                </button>
+                
+                <button id="deleteBtn" onclick="toggleDeleteMode()" style="background-color: #ff6b6b; color: white;">
+                     <i class="fa-solid fa-eraser"></i><br> <span>Delete Connection</span>
+                </button>
+                <button onclick="saveMindMap()" style="background-color: #4CAF50; color: white;">
+                    <i class="fa-solid fa-floppy-disk"></i><br> <span> Save</span>
+                </button>
+                <button onclick="loadMindMap()" style="background-color: #2196F3; color: white;">
+                    <i class="fa-solid fa-database"></i><br> <span> Load</span>
+                </button>
+                <button onclick="clearMindMap()" style="background-color: #f44336; color: white;">
+                    <i class="fa-solid fa-delete-left"></i><br> <span> Clear</span>
+                </button>
+            </div>
+              
+                
+
+
+            <div class="instruction">
+                <strong>4 ways to manage connections:</strong><br>
+                1. Click "Connect Topics" → click two nodes<br>
+                2. <strong>Double-click</strong> first node → <strong>double-click</strong> second node<br>
+                3. Hold <strong>Ctrl/Cmd + drag</strong> from one node to another<br>
+                4. Click <strong>"Delete Connection"</strong> → click on any arrow to delete it<br>
+                <strong>Enter</strong> = Add node | <strong>Shift+Enter</strong> = New line | <strong>ESC</strong> = Cancel modes
+            </div>
+
+        </div>
+
+            <div class="containtwo">
+                <div id="cy"></div>
+                <div id="error"></div>
+                <div id="saveStatus" style="font-size: 12px; margin-top: 5px;"></div>
+            </div>
+    </div>
+ 
+<!-- alert -->
+
+    <div id="customAlert" class="custom-modal">
+  <div class="custom-modal-content">
+    <!-- <span id="customAlertClose" class="custom-close">&times;</span> -->
+    <p id="customAlertMessage">This is a custom alert</p>
+    <button id="customAlertOkay" class="custom-ok-btn">OK</button>
+    
+  </div>
+</div>
+
+<!-- Custom Confirm Modal -->
+<!-- <div id="customConfirm" class="custom-modal">
+  <div class="custom-modal-content">
+    <p id="customConfirmMessage">Are you sure?</p>
+    <div class="custom-confirm-buttons">
+      <button id="yes" class="btn-yes">Yes</button>
+      <button id="no" class="btn-no">No</button>
+    </div>
+  </div>
+</div> -->
+
+
+
+    <script src="main.js"></script>
+    <script src="three.r134.min.js"></script>
+    <script src="vanta.fog.min.js"></script>
+    <script>
+        VANTA.FOG({
+  el: ".body",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  highlightColor: 0xffffff,
+  midtoneColor: 0xf464e4,
+  lowlightColor: 0x7d59f7,
+  baseColor: 0xdcd6f4
+})
+    </script>
+</body>
+</html>
+
+
