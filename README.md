@@ -2,8 +2,8 @@
 
 Planter is a simple and interactive web app that helps you **create, connect, and visualize ideas** like a digital mind map. You can add topics, connect them with arrows, and save or load your maps to continue working later.  
 
-![Planter Screenshot](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bb41572a-2792-4007-8ab5-efdcc796998e" />
-) <!-- Replace with actual image path if needed -->
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/690a42f4-b07e-4375-aad0-c5f779b748ef" />
+ <!-- Replace with actual image path if needed -->
 
 ---
 
@@ -18,7 +18,7 @@ Planter is a simple and interactive web app that helps you **create, connect, an
 ---
 
 ## 🚀 Demo  
-👉 [Live App]([https://planter.github.io/](https://aryansingh64.github.io/Planter/))  
+👉 [[Live App]([https://planter.github.io/](https://aryansingh64.github.io/Planter/))  ](https://aryansingh64.github.io/Planter/)
 
 ---
 
