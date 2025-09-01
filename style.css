@@ -4,15 +4,21 @@ body {
     box-sizing: border-box;
     overflow: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
 }
 .wrapper{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     
     width: 100vw;
+    height: 100vh; */
+    display: flex;
+    /* margin-top: 20px; */
+    width: 100vw;
     height: 100vh;
+    margin: 0 auto;
     
 }
 
@@ -21,7 +27,7 @@ body {
     flex-direction: row;
     align-items: center;
     margin: 0 auto;
-    margin-right: 1rem;/
+    margin-right: 1rem;
 }
 
 .controls {
